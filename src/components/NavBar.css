@@ -1,0 +1,10 @@
+.nav.openSearch .search-box {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .nav.openSearch .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
