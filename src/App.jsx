@@ -3,17 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import Loader from './components/Loader.jsx'
-import Logo from './components/Logo.jsx'
+import Loader from './components/logosandloaders/Loader.jsx'
 import Home from './pages/Home.jsx'
+import Community from './pages/Community.jsx'
+import Profile from './pages/Dashboard/Profile.jsx'
 
 function App() {
 
   return (
     <>
-      <div><Home /></div>
-      <br />
-      <div><Logo /></div>
+      {/* <div><Profile /></div> */}
+      {/* <div><Home /></div> */}
+      {/* <div><Community /></div> */}
       {/* <div><Loader /></div> */}
 
     </>

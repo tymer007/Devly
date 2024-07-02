@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #303030;
+        font-family: CascadiaMono-BoldItalic, 'Cascadia Mono';
+        font-size: 30px;
+        font-style: italic;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #ccc6c6;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="5" y="6" width="40" height="40" rx="12.12" ry="12.12"/>
+  <text class="cls-1" transform="translate(7.42 35.46)"><tspan x="0" y="0">D_</tspan></text>
+</svg>

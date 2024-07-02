@@ -1,0 +1,31 @@
+/* Center the loader in the screen and add a background */
+.loader-container {
+  position: fixed; /* Ensure it covers the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(36, 250, 7, 0.3); /* Semi-transparent background */
+  z-index: 9999; /* High z-index to cover other content */
+}
+
+.loader {
+  width: fit-content;
+  clip-path: inset(0 100% 0 0);
+  animation: l5 1s steps(12) infinite;
+  color: white; /* Change the text color to white */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.loader.visible {
+  clip-path: inset(0 0 0 0); /* Ensure text remains visible */
+}
+
+@keyframes l5 {
+  to {
+    clip-path: inset(0 -6ch 0 0);
+  }
+}

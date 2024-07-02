@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { UilBars, UilTimes } from '@iconscout/react-unicons';
+import LogoLoader from "./logosandloaders/AnimatedLogo.jsx";
 import "./NavBar.css";
 
 const Navbar = () => {
@@ -11,9 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full p-2 bg-blue-500 shadow-md flex items-center justify-between z-50 mb-10">
-      <div className='inline-grid'>
-        <a href="#" className='font-extrabold font-mono text-3xl text-white p-0 m-0'>Devly<span className='p-0 m-0 font-semibold font-sans text-2xl'>_</span></a>
-      </div>
+      <div><LogoLoader /></div>
 
       <ul className={`fixed top-0 ${openNav ? "left-0" : "-left-full"} h-full w-full max-w-xs bg-gray-900 p-6 flex flex-col space-y-8 justify-center items-center transition-all duration-300 md:static md:flex md:flex-row md:space-y-0 md:space-x-4 md:bg-transparent md:max-w-none md:p-0`}>
         <div className='inline-grid fixed top-2'>

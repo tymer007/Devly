@@ -11,6 +11,9 @@ module.exports = {
         customOrange: '#D73D00',
       },
     },
+    // fontFamily: {
+    //   sans: ['Montserrat', 'sans-serif'],
+    // },
   },
   plugins: [],
 };
