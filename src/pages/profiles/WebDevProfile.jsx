@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, Link2, BrainCircuit, MapPin, Phone, Mail, Linkedin, Github, Twitter, Instagram, Facebook, GraduationCap, Award, Dribbble } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Link2, BrainCircuit, MapPin, Phone, Mail, Linkedin, Github, Twitter, Instagram, Facebook, GraduationCap, Award, Dribbble, Languages } from 'lucide-react'
 
 const WebDevProfile = () => {
   return (
@@ -20,19 +20,19 @@ const WebDevProfile = () => {
         </div>
         <div className='flex justify-end pr-4 pt-4 md:pr-40'>
           <button type="submit" className="bg-[#D73D00] text-white py-2 px-4 rounded-md hover:bg-orange-700">
-            Community
+            Message Ceceil
           </button>
         </div>
         <div className="px-4 md:px-14 py-4">
           <div className="flex flex-col items-center md:items-start mt-16 md:mt-0 md:ml-32 md:px-28">
-            <h2 className="text-2xl font-semibold">Emily Carter</h2>
-            <span className="text-gray-500">Dr Journalist / Gynaecologist</span>
+            <h2 className="text-2xl font-semibold">Ceceil Benjamin</h2>
+            <span className="text-gray-500">Full Stack Developer</span>
           </div>
           <p className="text-gray-600 mb-6 mt-4 md:ml-32 md:px-28">Dr. Emily Carter is a renowned physician specializing in women's health, with a distinguished career in both clinical practice and academic research. She earned her medical degree from Johns Hopkins University and completed her residency in Obstetrics and Gynecology at the Mayo Clinic.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:px-28">
 
             <div className="bg-gray-50 p-4 rounded-lg shadow-md">
-              <h3 className="text-lg font-semibold mb-2">About</h3>
+              <h3 className="text-lg font-semibold mb-2 font-cascadia">About</h3>
 
               <div className='flex space-x-2 pb-1'>
                 <Link2 />
@@ -62,6 +62,8 @@ const WebDevProfile = () => {
 
               <div className='flex space-x-2 pb-1'>
 
+
+
                 <div>
                   <GraduationCap strokeWidth={1.5} />
                 </div>
@@ -74,13 +76,17 @@ const WebDevProfile = () => {
               <div className='flex space-x-2 pb-1'>
 
                 <div>
-                <Award strokeWidth={1.5} />
+                  <Award strokeWidth={1.5} />
                 </div>
                 <ol className='text-gray-700'>
                   <li className=''>AWS Certified Solutions Architect</li>
                   <li className=''>Certified ScrumMaster (CSM)</li>
                 </ol>
 
+              </div>
+              <div className='flex space-x-2 pb-1 '>
+                <Languages strokeWidth={1.5}/>
+                <div className='text-gray-700 break-all'>English, Hausa, French</div>
               </div>
 
 
@@ -98,12 +104,12 @@ const WebDevProfile = () => {
                 <div className='text-gray-700'>+234 703 382 ****</div>
               </div>
 
-              
+
               <div className='flex space-x-2 pb-1 '>
                 <Mail strokeWidth={1.5} />
                 <div className='text-gray-700 break-all'>sebastianmurphy@mail.com</div>
               </div>
-            
+
 
               <hr className="my-2 border-gray-300" />
 
@@ -120,7 +126,7 @@ const WebDevProfile = () => {
             </div>
 
             <div className="col-span-2 pb-5">
-              <h3 className="text-lg text-center font-semibold mb-4 text-[#D73D00]">Projects</h3>
+              <h3 className="text-lg text-center font-cascadia mb-4">Projects</h3>
               <div className="space-y-4">
                 {[1, 2, 3].map((article, index) => (
                   <div key={index} className="flex flex-col cursor-pointer md:flex-row space-y-4 md:space-y-0 md:space-x-4 bg-gray-50 p-4 rounded-lg shadow-md">

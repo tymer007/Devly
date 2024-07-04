@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './AnimatedLogo.css';
 
 const AnimatedLogo = () => {
@@ -27,9 +28,11 @@ const AnimatedLogo = () => {
   }, []);
 
   return (
-    <div ref={loaderRef} className="loader font-bold text-3xl custom-font text-white">
-      Devly<span className='p-0 m-0 font-semibold font-sans text-2xl'>_</span>
-    </div>
+    <Link to="/" >
+      <div ref={loaderRef} className="loader text-3xl text-devlyGreen font-cascadia">
+        Devly<span className='p-0 m-0 font-semibold font-sans text-2xl'>_</span>
+      </div>
+    </Link>
   );
 };
 

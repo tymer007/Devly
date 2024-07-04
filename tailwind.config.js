@@ -6,10 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customDark: '#051E1E',
-        customTeal: '#18CDCD',
+        devlyGreen: '#0DA16C',
+        devlyMint: '#EBFBEF',
         customOrange: '#D73D00',
       },
+    },
+    fontFamily: {
+      'cascadia': ['Cascadia Mono', 'monospace'],
     },
     // fontFamily: {
     //   sans: ['Montserrat', 'sans-serif'],

@@ -1,11 +1,10 @@
 .loader {
   width: fit-content;
-  font-family: 'Courier New', Courier, monospace;
   clip-path: inset(0 100% 0 0);
 }
 
 .loader.animate {
-  animation: l5 2s steps(12) 1;
+  animation: l5 2.5s steps(12) 1;
 }
 
 .loader.visible {

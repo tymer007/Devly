@@ -9,12 +9,13 @@ export default function Dashboard({ children }) {
     return (
         <>
             <aside className="min-h-screen">
-                <nav className="h-full flex flex-col bg-customDark border-r shadow-sm">
+                <nav className="h-full flex flex-col bg-black border-r shadow-sm">
                     <div className="p-4 pb-2 flex justify-between items-center">
-                        <div className={`overflow-hidden transition-all ${expanded ? "w-32" : "w-0"}`}>
-
-                            <div className='font-extrabold font-mono text-2xl text-white p-0 m-0'>Devly<span className='p-0 m-0 font-semibold font-sans text-2xl'>_</span></div>
-                        </div>
+                        <Link to="/">
+                            <div className={`overflow-hidden transition-all ${expanded ? "w-32" : "w-0"}`}>
+                                <div className='font-cascadia text-2xl text-devlyGreen p-0 m-0'>Devly<span className='p-0 m-0 font-semibold font-sans text-2xl'>_</span></div>
+                            </div>
+                        </Link>
 
                         {/* <img src="logo.png" className={`overflow-hidden transition-all ${expanded ? "w-32" : "w-0"}`} /> */}
 

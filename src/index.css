@@ -1,4 +1,14 @@
-@import '@fontsource/montserrat';
+@import "@fontsource/montserrat";
+
+@font-face {
+  font-family: "Cascadia Mono";
+  src: url("./fonts/CascadiaMono-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Other global styles */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
