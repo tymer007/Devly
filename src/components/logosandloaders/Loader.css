@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(36, 250, 7, 0.3); /* Semi-transparent background */
+  background-color: rgba(13, 161, 108, 0.5); /* Semi-transparent background */
   z-index: 9999; /* High z-index to cover other content */
 }
 
@@ -16,8 +16,7 @@
   width: fit-content;
   clip-path: inset(0 100% 0 0);
   animation: l5 1s steps(12) infinite;
-  color: white; /* Change the text color to white */
-  font-family: 'Courier New', Courier, monospace;
+  color: white;
 }
 
 .loader.visible {

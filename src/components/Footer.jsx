@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-devlyMint py-8 px-4">
+    <footer className="bg-devlyGreen text-white py-8 px-4 m-4 rounded-3xl">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex flex-col items-start">
           <h2 className="text-xl font-cascadia mb-2">Contact</h2>
-          <p className="text-gray-600">contact@devly.ng</p>
-          <p className="text-gray-600 mb-4">+234 549 454 ****</p>
+          <p>contact@devly.ng</p>
+          <p className="mb-4">+234 549 454 ****</p>
           <div className="flex space-x-3">
             <Link to="/signup">
             <button className="bg-black text-white font-bold py-2 px-4 rounded">Get Started</button>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-start">
           <h2 className="text-xl font-cascadia mb-2">Community</h2>
-          <ul className="text-gray-600 space-y-2">
+          <ul className="space-y-2">
             <li>Web Developers</li>
             <li>UI/UX</li>
             <li>Cyber Security</li>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-start">
           <h2 className="text-xl font-cascadia mb-2">About</h2>
-          <ul className="text-gray-600 space-y-2">
+          <ul className="space-y-2">
             <li>How it works</li>
             <li>Featured</li>
             <li>Contact us</li>
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
         {/* <div className="flex flex-col items-start">
           <h2 className="text-xl font-cascadia mb-2">Support</h2>
-          <ul className="text-gray-600 space-y-2">
+          <ul className="space-y-2">
             <li>FAQ</li>
             <li>Help Docs</li>
             <li>Email Us</li>
@@ -72,7 +72,7 @@ const Footer = () => {
           </ul>
         </div> */}
       </div>
-      <div className="mt-8 border-t border-gray-300 pt-4 text-gray-600 text-center text-sm">
+      <div className="mt-8 border-t border-gray-300 pt-4 text-center text-sm">
         <p className="space-x-2">
           <span>Terms of Service</span>
           <span>Privacy Policy</span>
@@ -80,7 +80,7 @@ const Footer = () => {
           <span>Cookie Policy</span>
           <span>Cancellation Policy</span>
         </p>
-        <p className='font-medium'><span className='font-black'>&copy;</span> 2024 <span className='text-devlyGreen font-cascadia'>Devly<span className='font-sans'>_</span></span> All Rights Reserved</p>
+        <p className='font-medium'><span className='font-black'>&copy;</span> 2024 <span className='text-devlyMint font-cascadia'>Devly<span className='font-sans'>_</span></span> All Rights Reserved</p>
       </div>
     </footer>
   );
