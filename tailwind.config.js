@@ -8,15 +8,12 @@ module.exports = {
       colors: {
         devlyGreen: '#0DA16C',
         devlyMint: '#EBFBEF',
-        customOrange: '#D73D00',
+        devlyWhite: '#F4FFFA',
       },
     },
     fontFamily: {
       'cascadia': ['Cascadia Mono', 'monospace'],
     },
-    // fontFamily: {
-    //   sans: ['Montserrat', 'sans-serif'],
-    // },
   },
   plugins: [],
 };
