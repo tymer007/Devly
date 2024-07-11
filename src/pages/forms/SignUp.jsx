@@ -42,7 +42,7 @@ const SignUp = () => {
         <div className="absolute mx-auto p-2">
           <AnimatedLogo />
         </div>
-        <div className="md:w-1/2 flex flex-col justify-center p-14 bg-white ">
+        <div className="md:w-3/5 flex flex-col justify-center p-14 bg-white ">
           <h1 className="text-3xl font-cascadia mb-4">
             Join our <span className="text-devlyGreen">community</span> today
           </h1>
@@ -159,7 +159,7 @@ const SignUp = () => {
         </div>
       </div>
       <div className="md:w-1/3 hidden md:flex items-center justify-center">
-        <img src="community.jpg" alt="Form" className="w-full h-full object-cover" />
+        <img src="cover-photo.png" alt="Form" className="w-full h-full object-cover" />
       </div>
     </div>
   );

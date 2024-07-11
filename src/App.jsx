@@ -8,6 +8,7 @@ import Home from './pages/Home.jsx'
 import Community from './pages/Community.jsx'
 import Profile from './pages/Dashboard/Profile.jsx'
 
+
 function App() {
 
   return (
@@ -16,7 +17,6 @@ function App() {
       {/* <div><Home /></div> */}
       {/* <div><Community /></div> */}
       {/* <div><Loader /></div> */}
-
     </>
   )
 }

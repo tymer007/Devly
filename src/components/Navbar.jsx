@@ -13,13 +13,13 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full p-2 px-4 bg-devlyMint flex items-center justify-between z-50 mb-10">
-      
+
       <div><AnimatedLogo /></div>
 
       <ul className={`fixed top-0 ${openNav ? "left-0" : "-left-full"} h-full w-full max-w-xs bg-green-100 p-6 flex flex-col space-y-8 justify-center items-center transition-all duration-300 md:static md:flex md:flex-row md:space-y-0 md:space-x-4 md:bg-transparent md:max-w-none md:p-0`}>
-        <div className='inline-grid fixed top-2'>
+        {/* <div className='inline-grid fixed top-2'>
           <a href="#" className='font-extrabold font-mono text-3xl text-devlyGreen p-0 m-0 lg:hidden'>Devly<span className='p-0 m-0 font-semibold font-sans text-2xl'>_</span></a>
-        </div>
+        </div> */}
         <li><a href="/" className="text-slate-600 font-medium hover:font-semibold hover:text-devlyGreen">Home</a></li>
         <li><a href="/community" className="text-slate-600 font-medium hover:text-devlyGreen">Community</a></li>
         <li><a href="/aboutus" className="text-slate-600 font-medium hover:text-devlyGreen">About Us</a></li>
