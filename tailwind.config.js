@@ -13,6 +13,10 @@ module.exports = {
     },
     fontFamily: {
       'cascadia': ['Cascadia Mono', 'monospace'],
+      'inter':['Inter', 'sans-serif'],
+    },
+    backgroundImage: {
+      'newImage': "url('./Frame 217.jpg')",
     },
     // fontFamily: {
     //   sans: ['Montserrat', 'sans-serif'],

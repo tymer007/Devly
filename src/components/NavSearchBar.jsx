@@ -25,7 +25,7 @@ const NavSearchBar = () => {
 
   return (
 
-    <nav className={`fixed top-0 left-0 w-full p-2 px-4 flex items-center justify-between z-50 ${openSearch ? "openSearch" : ""}`}>
+    <nav className={`fixed top-0 left-0 w-full p-2 bg-[#DDF7EB]px-4 flex items-center justify-between z-50 ${openSearch ? "openSearch" : ""}`}>
       {/* <UilBars className="text-white text-2xl cursor-pointer navOpenBtn md:hidden" onClick={toggleNav} /> */}
       <div><AnimatedLogo />
       </div>
@@ -45,7 +45,7 @@ const NavSearchBar = () => {
 
       <UilSearch id="searchIcon" className="text-slate-700 text-2xl cursor-pointer block sm:hidden" onClick={toggleSearch} />
 
-      <div className={`search-box absolute h-10 max-w-md w-11/12 transition-all duration-200 ${openSearch ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"} left-1/2 transform -translate-x-1/2 top-1/2 transform -translate-y-1/2`}>
+      <div className={`search-box absolute h-10 max-w-md w-11/12 transition-all duration-200 ${openSearch ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"} left-1/2  -translate-x-1/2 top-1/2 transform -translate-y-1/2`}>
         <div>
           <Tally1 className="absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-500" />
           <X className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500" onClick={toggleSearch} />
