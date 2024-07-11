@@ -7,12 +7,10 @@ import './index.css'
 import Home from './pages/Home.jsx'
 import Login from './pages/forms/Login.jsx'
 import SignUp from './pages/forms/SignUp.jsx'
-import Setup from './pages/forms/SetUpProfile.jsx'
+import ProfileSetup from './pages/forms/ProfileSetup.jsx'
 import Community from './pages/Community.jsx'
 import AboutUs from './pages/AboutUs.jsx'
 import WebDevProfile from './pages/profiles/WebDevProfile.jsx'
-
-import Setup2 from './pages/forms/Setup2.jsx'
 
 import Profile from './pages/Dashboard/Profile.jsx'
 
@@ -25,9 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       <Route path='/Login' element={< Login/>}/>
       <Route path='/SignUp' element={< SignUp/>}/>
-      <Route path='/Setup' element={< Setup/>}/>
-      
-      <Route path='/Setup2' element={< Setup2/>}/>
+      <Route path='/ProfileSetup' element={< ProfileSetup/>}/>
 
       <Route path='/WebDevProfile' element={< WebDevProfile/>}/>
 
