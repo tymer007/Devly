@@ -60,7 +60,7 @@ function Community() {
           Community<span className='p-0 m-0 font-semibold font-sans text-2xl '>_</span>
         </div>
 
-        <div  className=' flex flex-col bg-newImage w-[95%] font-inter mx-auto relative h-28 md:h-72 lg:h-96 rounded-sm md:rounded-2xl bg-contain bg-no-repeat'>
+        <div  className=' flex flex-col bg-newImage w-[95%] font-inter mx-auto relative h-32 md:h-72 lg:h-96 rounded-sm md:rounded-2xl bg-contain bg-no-repeat'>
           {/* <img src="./Frame 217.jpg" alt="CommImg" className="w-[95%] mx-auto relative " /> */}
           <div className='flex  ml-6 mt-3 md:mt-8 lg:mt-20 md: md:ml-12 lg:ml-20 absolute w-full '>
             <span className='bg-black  w-1 md:w-2 md:h-10 rounded-l-lg mr-6 shadow-2xl '></span>
