@@ -25,7 +25,7 @@ const NavSearchBar = () => {
 
   return (
 
-    <nav className={`fixed top-0 left-0 w-full p-2 bg-[#DDF7EB]px-4 flex items-center justify-between z-50 ${openSearch ? "openSearch" : ""}`}>
+    <nav className={`fixed top-0 left-0 w-full bg-[#F4FFFA] p-2 bg-[#DDF7EB]px-4 flex items-center justify-between z-50 ${openSearch ? "openSearch" : ""}`}>
       {/* <UilBars className="text-white text-2xl cursor-pointer navOpenBtn md:hidden" onClick={toggleNav} /> */}
       <div><AnimatedLogo />
       </div>

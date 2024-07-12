@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom';
 
 function Home() {
   const steps = [
@@ -46,7 +47,7 @@ function Home() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6 md:mb-9">Collaboration Meets Innovation</h1>
               <p className="text-base sm:text-lg md:text-xl">Devly is a cutting-edge networking platform designed to bring tech professionals together, fostering</p>
               <p className="text-base sm:text-lg md:text-xl mb-2 sm:mb-3">unending collaboration and groundbreaking innovation.</p>
-              <button className="bg-[#0DA16C] text-white px-4 sm:px-6 py-2 rounded-md">Get Started</button>
+              <Link to="/SignUp"><button className="bg-[#0DA16C] text-white px-4 sm:px-6 py-2 rounded-md">Get Started</button></Link>
             </section>
 
 
@@ -145,9 +146,9 @@ function Home() {
                     <p className="mb-2 sm:mb-4 text-gray-600">
                       Collaborate with tech like-minded professionals from around the globe. Build your network, share ideas, and explore new opportunities.
                     </p>
-                    <a href="#explore" className="inline-block bg-[#0DA16C] text-white font-semibold py-2 px-4 rounded">
+                    <Link to="/Community"><a href="#explore" className="inline-block bg-[#0DA16C] text-white font-semibold py-2 px-4 rounded">
                       Go to Community
-                    </a>
+                    </a></Link>
                   </div>
                 </div>
               </div>

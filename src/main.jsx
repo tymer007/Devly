@@ -11,7 +11,7 @@ import ProfileSetup from './pages/forms/ProfileSetup.jsx'
 import Community from './pages/Community.jsx'
 import AboutUs from './pages/AboutUs.jsx'
 import WebDevProfile from './pages/profiles/WebDevProfile.jsx'
-
+import CommUIUX from './pages/CommUIUX.jsx'
 import Profile from './pages/Dashboard/Profile.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -28,7 +28,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/WebDevProfile' element={< WebDevProfile/>}/>
 
       <Route path='/Profile' element={< Profile/>}/>
-
+      <Route path='/CommUIUX' element={< CommUIUX/>}/>
+      
 
 
 

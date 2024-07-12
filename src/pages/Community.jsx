@@ -69,7 +69,7 @@ function Community() {
         }}  
         className=' flex flex-col  w-[95%] font-inter mx-auto relative h-32 md:h-72 lg:h-96 rounded-sm md:rounded-2xl bg-contain bg-no-repeat'>
           {/* <img src="./Frame 217.jpg" alt="CommImg" className="w-[95%] mx-auto relative " /> */}
-          <div className='flex  ml-8 mt-3 md:mt-8 lg:mt-20 md: md:ml-12 lg:ml-20 absolute w-full '>
+          <div className='flex  ml-8 mt-3 md:mt-8 lg:mt-20 md: md:ml-12 lg:ml-20 absolute w-full lg:max-w-[80%]'>
             <span className='bg-black  w-1 md:w-2 md:h-10 rounded-l-lg mr-6 shadow-2xl '></span>
             <h1 className='   text-white text-lg md:text-4xl font-bold md:max-w-[100%]'>Welcome To The Devly Community</h1>
           </div>
