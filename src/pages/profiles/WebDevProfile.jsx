@@ -14,11 +14,11 @@ const WebDevProfile = () => {
           />
           <img
             className="w-32 h-32 rounded-full border-4 border-red-500 absolute top-28 left-1/2 transform -translate-x-1/2 md:left-40 md:transform-none shadow-lg"
-            src="doctress.jpg"
+            src="./Ellipse 288.jpg"
             alt="Author"
           />
         </div>
-        <div className='flex justify-end pr-4 pt-4 md:pr-40'>
+        <div className='hidden md:hidden justify-end pr-4 pt-4 md:pr-40'>
           <button type="submit" className="bg-[#D73D00] text-white py-2 px-4 rounded-md hover:bg-orange-700">
             Message Ceceil
           </button>
@@ -36,7 +36,7 @@ const WebDevProfile = () => {
 
               <div className='flex space-x-2 pb-1'>
                 <Link2 />
-                <a href="www.google.com" className='text-blue-600'>visit-my-personal-portfolio</a>
+                <a href="www.google.com" className='text-[#0DA16C]'>visit-my-personal-portfolio</a>
               </div>
 
               <div className='flex flexspace-x-2 pb-1'>
@@ -141,17 +141,17 @@ const WebDevProfile = () => {
                       <p className="text-gray-700 mb-2">
                         Breast cancer remains one of the most prevalent and impactful diseases affecting women worldwide. This article delves into the lates...</p>
                       <div className='flex flex-col text-end'>
-                        <a href="#" className="text-[#18CDCD] text-sm font-bold">Read more</a>
+                        <a href="#" className="text-[#0DA16C] text-sm font-bold">Read more</a>
                       </div>
                     </div>
                   </div>
 
                 ))}
                 <div className="flex justify-center space-x-4 mt-4">
-                  <button className="flex items-center justify-center bg-[#18CDCD] text-white rounded-md hover:bg-teal-500">
+                  <button className="flex items-center justify-center bg-[#0DA16C] text-white rounded-md hover:bg-teal-500">
                     <ArrowLeft />
                   </button>
-                  <button className="flex items-center justify-center bg-[#18CDCD] text-white rounded-md hover:bg-teal-500">
+                  <button className="flex items-center justify-center bg-[#0DA16C] text-white rounded-md hover:bg-teal-500">
                     <ArrowRight />
                   </button>
                 </div>

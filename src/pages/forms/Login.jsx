@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Eye, EyeOff, Lock, Mail } from 'lucide-react';
+import { Eye, EyeOff, Lock, Mail ,ArrowLeft} from 'lucide-react';
 
 import AnimatedLogo from '../../components/logosandloaders/AnimatedLogo';
 
@@ -32,7 +32,11 @@ const Login = () => {
       </div>
       <div className='bg-[#DDF7EB] w-[45.5rem]  h-dvh  md:h-dvh md:w-full '>
         <div className='w-10/12 h-auto  lg:w-9/12 bg-white  m-auto p-10 my-8 rounded-lg items-center'>
+        <Link to="/"><button className="flex items-center justify-center bg-[#0DA16C] text-white rounded-md hover:bg-teal-500">
+                    <ArrowLeft />
+                  </button></Link> 
           <div className='flex justify-center'>
+          
             <AnimatedLogo />
           </div>
           <p className='text-center font-medium mt-3'>Login into your account</p>

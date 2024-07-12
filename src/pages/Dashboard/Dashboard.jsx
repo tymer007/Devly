@@ -5,7 +5,7 @@ import { createContext, useContext, useState } from "react"
 const SidebarContext = createContext();
 
 export default function Dashboard({ children }) {
-    const [expanded, setExpanded] = useState(true)
+    const [expanded, setExpanded] = useState(false)
     return (
         <>
             <aside className="min-h-screen">

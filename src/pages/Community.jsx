@@ -47,8 +47,8 @@ function Community() {
         <div><AnimatedLogo /></div>
         <div className="flex items-center space-x-2">
           <img src="user-photo.png" className="w-8 h-8 rounded-md" alt="User" />
-          <div className="hidden md:flex flex-col items-start">
-            <Link to="/profile"><h4 className="font-semibold">Go to Dashboard</h4></Link>
+          <div className=" md:flex flex-col items-start">
+            <Link to="/profile"><h4 className="font-semibold text-sm">Go to Dashboard</h4></Link>
             <span className="text-sm">Log Out</span>
           </div>
         </div>
