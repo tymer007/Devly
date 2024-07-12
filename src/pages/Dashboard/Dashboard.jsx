@@ -8,7 +8,7 @@ export default function Dashboard({ children }) {
     const [expanded, setExpanded] = useState(false)
     return (
         <>
-            <aside className="min-h-screen">
+            <aside className="min-h-screen md:h-screen z-10 fixed">
                 <nav className="h-full flex flex-col bg-black border-r shadow-sm">
                     <div className="p-4 pb-2 flex justify-between items-center">
                         <Link to="/">
