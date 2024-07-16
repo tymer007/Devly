@@ -8,8 +8,8 @@ export default function Dashboard({ children }) {
     const [expanded, setExpanded] = useState(false)
     return (
         <>
-            <aside className="min-h-screen md:h-screen z-10 fixed">
-                <nav className="h-full flex flex-col bg-black border-r shadow-sm">
+            <aside className="h-screen md:h-screen z-10 flex fixed">
+                <nav className="h-full flex flex-col bg-black border-r shadow-sm ">
                     <div className="p-4 pb-2 flex justify-between items-center">
                         <Link to="/">
                             <div className={`overflow-hidden transition-all ${expanded ? "w-32" : "w-0"}`}>
@@ -41,6 +41,7 @@ export default function Dashboard({ children }) {
                     </SidebarContext.Provider>
                 </nav>
             </aside>
+            
         </>
     )
 };

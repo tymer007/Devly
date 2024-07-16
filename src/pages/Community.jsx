@@ -91,12 +91,12 @@ function Community() {
       </div>
       
           <div className="bg-white  font-inter md:px-24 py-8 flex flex-col-reverse md:flex-row items-center">
-            <div className="w-2/3">
+            <div className="w-[80%] md:w-2/3">
               <h2 className="text-lg md:text-2xl font-bold mb-4 max-w-[100%] md:max-w-[50%]">Remember, Showcase Your Work to the World</h2>
-              <p className="text-gray-700 mb-4 max-w-[70%]">At Devly, we believe in the power of showcasing your achievements. With our Share Your Portfolio feature, you can easily display your projects, skills, and accomplishments for the world to see. Whether you’re a developer, designer, or tech enthusiast, our platform allows you to create a stunning portfolio that highlights your best work.</p>
+              <p className="text-gray-700 mb-4 max-w-[90%] md:max-w-[70%]">At Devly, we believe in the power of showcasing your achievements. With our Share Your Portfolio feature, you can easily display your projects, skills, and accomplishments for the world to see. Whether you’re a developer, designer, or tech enthusiast, our platform allows you to create a stunning portfolio that highlights your best work.</p>
               <button className="bg-[#0DA16C] text-white px-4 py-2 rounded hover:bg-green-600">EDIT PROFILE</button>
             </div>
-            <div className="w-1/3">
+            <div className="w-[80%] md:w-1/3">
               <img src="./People.jpg" alt="" className="w-full h-full"/>
             </div>
           </div>
@@ -104,12 +104,12 @@ function Community() {
 
   
           <div className="bg-white md:px-24 py-8 flex flex-col-reverse md:flex-row-reverse items-center">
-            <div className="w-2/3 md:ml-48 lg:ml-64">
+            <div className="w-[80%] md:w-2/3 md:ml-48 lg:ml-64">
               <h2 className="text-lg md:text-2xl font-bold mb-4  md:max-w-[50%]">Craft the Perfect Resume with Ease</h2>
               <p className="text-gray-700 mb-4 max-w-[90%]">Stand out from the crowd with a professionally designed resume, made simple with Devly's Create Your Resume with Templates feature. Choose from a variety of customizable templates that cater to different styles and industries. Our tool guides you through each step, ensuring your resume is comprehensive and polished.</p>
               <button className="bg-[#0DA16C] text-white px-4 py-2 rounded hover:bg-green-600">CREATE MY RESUME</button>
             </div>
-            <div className="w-1/3">
+            <div className="md:w-1/3 w-[80%]">
               <img src="./image 28.jpg" alt="" className="w-full h-auto"/>
             </div>
           </div>
@@ -118,13 +118,13 @@ function Community() {
 
     
           <div className="bg-white md:px-24 py-8 flex flex-col-reverse md:flex-row items-center">
-            <div className="w-2/3">
-              <h2 className="text-2xl font-bold mb-4 md:max-w-[50%]">Customize Your Business Cards and make a Lasting Impression</h2>
-              <p className="text-gray-700 mb-4 max-w-[70%]">our business card is often the first impression you make. With Devly’s Customize Your Business Cards feature, you can design unique, professional cards that reflect your personal brand. Choose from a wide range of templates and personalize them to suit your style.</p>
+            <div className="w-[80%]">
+              <h2 className="text-2xl font-bold mb-4  md:max-w-[50%]">Customize Your Business Cards and make a Lasting Impression</h2>
+              <p className="text-gray-700 mb-4  max-w-[100%] md:max-w-[70%]">our business card is often the first impression you make. With Devly’s Customize Your Business Cards feature, you can design unique, professional cards that reflect your personal brand. Choose from a wide range of templates and personalize them to suit your style.</p>
               <button className="bg-[#0DA16C] text-white px-4 py-2 rounded hover:bg-green-600">GET MY BUSINESS CARD</button>
             </div>
-            <div className="w-1/3">
-              <img src="./image 7.png" alt="" className="w-full h-auto"/>
+            <div className="w-[80%] md:w-1/3">
+              <img src="./image 7.png" alt="" className="w- h-auto "/>
             </div>
           </div>
     
