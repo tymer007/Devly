@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ProtectedRoute>
     <NewPassword />
   </ProtectedRoute>}/> */}
-  <Route path='/NewPassword:passwordtoken' element={<NewPassword />}/>
+  <Route path='/NewPassword/:passwordtoken' element={<NewPassword />}/>
   </Routes>
   </BrowserRouter>
 )
