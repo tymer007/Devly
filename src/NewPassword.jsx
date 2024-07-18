@@ -37,7 +37,7 @@ const NewPassword = () => {
       });
 
       setLoading(false);
-      navigate('https://devlyng.vercel.app/Login'); // Redirect to the full URL of the login page on success
+      window.location.href = 'https://devlyng.vercel.app/Login';
     } catch (error) {
       setLoading(false);
       setError('Failed to reset password. Please try again.');
