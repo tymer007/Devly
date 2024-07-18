@@ -15,6 +15,7 @@ const NewPassword = () => {
   useEffect(() => {
     if (!passwordtoken) {
       setError('Invalid or missing token.');
+      console.log(passwordtoken);
     }
   }, [passwordtoken]);
 
