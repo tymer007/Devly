@@ -6,7 +6,7 @@ import Loader from './components/logosandloaders/logosandloaders/Loader';
 
 const NewPassword = () => {
   const [loading, setLoading] = useState(false);
-  const [newPassword, setNewPassword] = useState('');
+  const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const location = useLocation();
@@ -25,7 +25,7 @@ const NewPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (newPassword !== confirmPassword) {
+    if (password !== confirmPassword) {
       setError('Passwords do not match');
       return;
     }
@@ -35,7 +35,7 @@ const NewPassword = () => {
 
     try {
       await axios.post('https://connect-i645.onrender.com/api/connect/password/reset-password', {
-        password: newPassword,
+        password: password,
         token
       });
 
@@ -65,8 +65,8 @@ const NewPassword = () => {
               type="password"
               placeholder='Enter New Password'
               className="bg-[#DDF7EB] border-gray-300 focus:outline-none focus:ring-green-500 focus:border-green-500 mt-3 block w-[100%] px-3 py-2 border m-auto rounded-md shadow-sm"
-              value={newPassword}
-              onChange={(e) => setNewPassword(e.target.value)}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
             <input 
