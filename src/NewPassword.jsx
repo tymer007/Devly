@@ -3,6 +3,7 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import AnimatedLogo from './components/logosandloaders/AnimatedLogo';
 import Loader from './components/logosandloaders/logosandloaders/Loader';
+import ModalOverlay from './components/ModalOverlay';
 
 const NewPassword = () => {
   const { passwordtoken } = useParams();
@@ -11,6 +12,9 @@ const NewPassword = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
+  const [modalType, setModalType] = useState('');
 
   useEffect(() => {
     if (!passwordtoken) {
@@ -21,6 +25,7 @@ const NewPassword = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+ 
 
     if (password !== confirmPassword) {
       setError('Passwords do not match');
@@ -28,6 +33,9 @@ const NewPassword = () => {
     }
 
     setLoading(true);
+    setModalOpen(false);
+    setModalMessage('');
+    setModalType('');
     setError('');
 
     try {
@@ -37,10 +45,20 @@ const NewPassword = () => {
       });
 
       setLoading(false);
+      setModalMessage('Password Successfully Reset');
+      setModalType('success');
+      setTimeout(() => {
+        setModalOpen(false); // Close modal after 3 seconds
+      }, 3000);
       window.location.href = 'https://devlyng.vercel.app/Login';
     } catch (error) {
       setLoading(false);
       setError('Failed to reset password. Please try again.');
+      setModalMessage('Failed to send password recovery email. Please try again.');
+      setModalType('error');
+      setTimeout(() => {
+        setModalOpen(false); // Close modal after 3 seconds
+      }, 3000);
     }
   };
 
@@ -83,6 +101,7 @@ const NewPassword = () => {
           </form>
         </div>
       </div>
+      <ModalOverlay isOpen={modalOpen}  message={modalMessage} type={modalType} />
     </div>
   );
 };
