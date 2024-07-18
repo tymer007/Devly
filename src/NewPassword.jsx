@@ -5,23 +5,18 @@ import AnimatedLogo from './components/logosandloaders/AnimatedLogo';
 import Loader from './components/logosandloaders/logosandloaders/Loader';
 
 const NewPassword = () => {
-  const {passwordtoken} = useParams();
+  const { passwordtoken } = useParams();
   const [loading, setLoading] = useState(false);
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
-  const location = useLocation();
   const navigate = useNavigate();
 
-  // Extract token from URL
-  const searchParams = new URLSearchParams(location.search);
-  const token = searchParams.get('token');
-
   useEffect(() => {
-    if (!token) {
+    if (!passwordtoken) {
       setError('Invalid or missing token.');
     }
-  }, [token]);
+  }, [passwordtoken]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
