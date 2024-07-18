@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import AnimatedLogo from './components/logosandloaders/AnimatedLogo';
 import Loader from './components/logosandloaders/logosandloaders/Loader';
 
 const NewPassword = () => {
+  const {passwordtoken} = useParams();
   const [loading, setLoading] = useState(false);
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -35,8 +36,8 @@ const NewPassword = () => {
 
     try {
       await axios.post('https://connect-i645.onrender.com/api/connect/password/reset-password', {
-        password: password,
-        token
+        passwordtoken,
+        password,
       });
 
       setLoading(false);
