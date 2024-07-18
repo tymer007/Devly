@@ -47,17 +47,18 @@ const NewPassword = () => {
       setLoading(false);
       setModalMessage('Password Successfully Reset');
       setModalType('success');
-      setTimeout(() => {
-        setModalOpen(false); // Close modal after 3 seconds
-      }, 3000);
+      
       window.location.href = 'https://devlyng.vercel.app/Login';
     } catch (error) {
       setLoading(false);
       setError('Failed to reset password. Please try again.');
       setModalMessage('Failed to send password recovery email. Please try again.');
       setModalType('error');
+    } finally {
+      setLoading(false);
+      setModalOpen(true);
       setTimeout(() => {
-        setModalOpen(false); // Close modal after 3 seconds
+      setModalOpen(false); // Close modal after 3 seconds
       }, 3000);
     }
   };
