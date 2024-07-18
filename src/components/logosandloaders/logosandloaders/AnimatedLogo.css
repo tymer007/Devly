@@ -1,0 +1,18 @@
+.loader {
+  width: fit-content;
+  clip-path: inset(0 100% 0 0);
+}
+
+.loader.animate {
+  animation: l5 2.5s steps(12) 1;
+}
+
+.loader.visible {
+  clip-path: inset(0 0 0 0); /* Ensure text remains visible */
+}
+
+@keyframes l5 {
+  to {
+    clip-path: inset(0 -6ch 0 0);
+  }
+}
