@@ -74,7 +74,7 @@ const NewPassword = () => {
           <div className='flex justify-center'>
             <AnimatedLogo />
           </div>
-          <p className='text-center font-bold text-xl mt-3'>Password Recovery</p>
+          <p className='text-center font-bold text-xl mt-3'>Set Your New Password</p>
           {error && <p className="text-center text-red-500">{error}</p>}
           <form onSubmit={handleSubmit}>
             <input 
